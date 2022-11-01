@@ -15,11 +15,11 @@ export default function Home() {
 
 
     const [books, setBooks] = useState([]);
-    
-    useEffect(() => {
 
+    useEffect(() => {
+        getBooks();
     }, [])
-    
+
     async function getBooks() {
         try {
             const response = await axios({
@@ -31,11 +31,8 @@ export default function Home() {
             console.log(response.data.content)
         } catch (error) {
             console.log(error);
-        }    }
-
-    getBooks();
-
-
+        }
+    }
     return (
 
         <div>

@@ -5,12 +5,10 @@ import Books from './pages/Books';
 import BooksNav from './components/BooksNav'
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-import BooksNav from './components/BooksNav';
 
 function App() {
 
   return (
-
     < BrowserRouter >
 
       <h1>Book Favorites</h1>
@@ -25,8 +23,6 @@ function App() {
       </Routes>
     </BrowserRouter >
   );
-
-
 }
 
 export default App;
